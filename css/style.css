@@ -1,0 +1,69 @@
+html{
+    font-size:16px;
+}
+body{
+    background: #efefef;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:30px 40px;
+}
+h2{
+    text-align: center;
+}
+
+.btn{
+    width:250px;
+    height:250px;
+    background: #ef454a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 250px;
+    font-size:1.5rem;
+    color:floralwhite;
+    font-weight: bold;
+    margin:0 auto;
+    cursor: pointer;
+    box-shadow:0 10px 0 #d1483e;
+    /* 影のスタイル X 方向に 0 、 Y 方向に 10px 、ぼかしなし、色は少し濃いめの赤#d1483e */
+    user-select: none;/*文字を選択付加にする*/
+}
+.btn:hover{
+    opacity: 0.9; /*hover時に少し透明色薄くする*/
+}
+.btn:active{    /*クリックした時*/
+    box-shadow:0 5px 0 #d1483e;
+    /*box-shadowをうすめに #btn には box-shadow が下方向に 10px 付いているので、半分の 5px に*/
+    margin-top:35px;
+   /*#btn には上の margin が 30px 付いている.
+   こちらではこれを少し大きくして #btn が下にずれるように
+   box-shadowは5px分うすくしたので margin-topには5px足して35pxでOK*/
+}
+#reset{
+    width: 300px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px gainsboro;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    .btn{
+        width:200px;
+        height:200px;
+        background: #ef454a;
+        line-height: 200px;
+        font-size:1.2rem;
+    }
+}
