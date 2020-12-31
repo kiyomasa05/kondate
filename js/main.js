@@ -18,12 +18,13 @@ btn01.addEventListener('click', () => {
         '鳥の照り焼き',
         'オムライス',
         '鮭のホイル焼き',
-		'三食丼',
-		'たらのホイルマヨ',
-		'焼き鳥',
-		'エビピラフ',
-		'麻婆豆腐',
+	'三食丼',
+	'たらのホイルマヨ',
+	'焼き鳥',
+	'エビピラフ',
+	'麻婆豆腐',
         '手羽元の甘煮',
+	'サイコロステーキ',
         '生姜焼き']; 
     const n1 = Math.floor(Math.random() * results01.length);
     btn01.textContent = results01[Math.floor(Math.random() * results01.length)];
