@@ -25,6 +25,10 @@ btn01.addEventListener('click', () => {
 	'麻婆豆腐',
         '手羽元の甘煮',
 	'サイコロステーキ',
+	'チャーハン',
+	'牛丼',
+	'すき焼き',
+	'照り焼きポテト',  
         '生姜焼き']; 
     const n1 = Math.floor(Math.random() * results01.length);
     btn01.textContent = results01[Math.floor(Math.random() * results01.length)];
@@ -40,12 +44,12 @@ btn02.addEventListener('click', () => {
         'カルボナーラ',
         '唐揚げ',
         'チキン南蛮',
-		'鳥の竜田揚げ',
-		'チーズリゾット',
-		'春巻き',
-		'中華丼',
+	'鳥の竜田揚げ',
+	'チーズリゾット',
+	'春巻き',
+	'中華丼',
         '天ぷら',
-		'グラタン']; 
+	'グラタン']; 
     const n2 = Math.floor(Math.random() * results02.length);
     btn02.textContent = results02[Math.floor(Math.random() * results02.length)];
 })
