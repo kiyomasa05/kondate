@@ -7,10 +7,10 @@ const btn03 = document.getElementById('btn03');
 btn01.addEventListener('click', () => {
     // ここに簡単な献立を追加する
     const results01 = [
-        '親子丼',
+       '親子丼',
         'カレー',
         '鍋',
-        '餃子',
+        'ちらし寿司'
         'お好み焼き',
         'もんじゃ焼き',
         'たこ焼き',
@@ -18,28 +18,33 @@ btn01.addEventListener('click', () => {
         '鳥の照り焼き',
         'オムライス',
         '鮭のホイル焼き',
-        '三食丼',
-        '生姜焼き'];  
+		'三食丼',
+		'たらのホイルマヨ',
+		'焼き鳥',
+		'エビピラフ',
+		'麻婆豆腐',
+        '手羽元の甘煮',
+        '生姜焼き']; 
     const n1 = Math.floor(Math.random() * results01.length);
     btn01.textContent = results01[Math.floor(Math.random() * results01.length)];
 })
 btn02.addEventListener('click', () => {
     // ここに難しい献立を追加する
     const results02 = [
-        'ハンバーグ',
+         'ハンバーグ',
         'ロールキャベツ',
         '餃子',
         'エビチリ',
-        '鳥の照り焼き',
         'トマトチキンパスタ',
         'カルボナーラ',
         '唐揚げ',
-        'たらのホイルマヨ',
         'チキン南蛮',
-        '鳥の竜田揚げ',
-        '焼き鳥',
-        '春巻き',
-        'ちらし寿司']; 
+		'鳥の竜田揚げ',
+		'チーズリゾット',
+		'春巻き',
+		'中華丼',
+        '天ぷら',
+		'グラタン']; 
     const n2 = Math.floor(Math.random() * results02.length);
     btn02.textContent = results02[Math.floor(Math.random() * results02.length)];
 })
@@ -47,7 +52,10 @@ btn03.addEventListener('click', () => {
     // ここに難しい献立を追加する
     const results03 = [
         '味噌汁',
+        'コールスロー',
+        'マカロニサラダ',
         'たまごスープ',
+        'オニオングラタンスープ',
         'ポテト',
         'コンソメスープ',
         'コンポタ']; 
